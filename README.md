@@ -6,7 +6,7 @@ The goal is to allow both Nutanix Acropolis Operating System (AOS) and Community
 Please feel free to use or modify these instructions as you see fit. I put this together to simplify the adoption of Folding at Home.  
 Thank you for taking the time to join the Folding At Home community.  Have a wonderful day.
 #
-The following instructions will help you install Ubuntu Linux 16.04 LTS, and anonymously join the Nutanix team.  I've included instructions on how you can modify the user and passkey, which can be obtained by creating an acocunt on Foldingathome.org.
+The following instructions will help you install Ubuntu Linux 16.04 LTS, and anonymously join the Nutanix team.  I've included instructions on how you can modify the user and passkey, which can be obtained by creating an account on Foldingathome.org.
 #
 Main location for Ubuntu images. Recommend visiting this before you deploy, to ensure you have the latest version:  
 https://cloud-images.ubuntu.com/releases/xenial/release/  
