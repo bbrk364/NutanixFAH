@@ -18,18 +18,18 @@ U: ubuntu
 P: nutanix/4u  
 #
 Required config to run on AHV.  
-```#cloud-config  
-password: nutanix/4u  
-chpasswd: { expire: False }  
-ssh_pwauth: True  
+```'#cloud-config'
+password: nutanix/4u
+chpasswd: { expire: False }
+ssh_pwauth: True
 mkdir /ntnxfah
 wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1-64bit-release.tar.bz2 -O /ntnxfah
 cd /ntnxfah
-tar -jxvf fahclient_7.5.1-64bit-release.tar.bz2  
-wget https://github.com/vPeteWalker74/NutanixFAH/blob/master/config.xml  
-wget https://download.foldingathome.org/releases/public/release/fahcontrol/debian-stable-64bit/v7.5/fahcontrol_7.5.1-1_all.deb  
-dpkg -i --force-depends fahcontrol_7.5.1-1_all.deb  
-./FAHClient --config=config.xml```  
+tar -jxvf fahclient_7.5.1-64bit-release.tar.bz2
+wget https://github.com/vPeteWalker74/NutanixFAH/blob/master/config.xml
+wget https://download.foldingathome.org/releases/public/release/fahcontrol/debian-stable-64bit/v7.5/fahcontrol_7.5.1-1_all.deb
+dpkg -i --force-depends fahcontrol_7.5.1-1_all.deb
+./FAHClient --config=config.xml```
 #
 Connect to any CVM and run the following before powering on the VM:  
 acli vm.serial_port_create <VM_NAME> index=0 type=kNull  
