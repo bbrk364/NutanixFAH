@@ -4,18 +4,14 @@
   <cpu-usage v='100'/>
   <smp v='true'/>
 
+  <!-- Network -->
+  <proxy v=':8080'/>
+
   <!-- Process Control -->
   <fork v='true'/>
   <priority v='high'/>
   <respawn v='true'/>
   <service v='true'/>
-
-  <!-- Slot Control -->
-  <pause-on-battery v='false'/>
-  <power v='FULL'/>
-  
-  <!-- Folding Slot Configuration -->
-  <cpus v='0'/>
 
   <!-- User Information -->
   <passkey v='82cdc64762a44c2882cdc64762a44c28'/>
