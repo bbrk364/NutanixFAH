@@ -1,0 +1,19 @@
+<config>
+  <!-- Folding Core -->
+  <core-priority v='low'/>
+
+  <!-- Network -->
+  <proxy v=':8080'/>
+
+  <!-- Slot Control -->
+  <pause-on-battery v='false'/>
+  <power v='FULL'/>
+
+  <!-- User Information -->
+  <passkey v='82cdc64762a44c2882cdc64762a44c28'/>
+  <team v='240445'/>
+  <user v='vPeteWalker'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'/>
+</config>
