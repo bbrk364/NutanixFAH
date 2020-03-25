@@ -1,0 +1,29 @@
+<config>
+  <!-- Folding Core -->
+  <core-priority v='low'/>
+  <cpu-usage v='100'/>
+  <smp v='true'/>
+
+  <!-- Process Control -->
+  <fork v='true'/>
+  <priority v='high'/>
+  <respawn v='true'/>
+  <service v='true'/>
+
+  <!-- Slot Control -->
+  <pause-on-battery v='false'/>
+  <power v='FULL'/>
+  
+  <!-- Folding Slot Configuration -->
+  <cpus v='0'/>
+
+  <!-- User Information -->
+  <passkey v='82cdc64762a44c2882cdc64762a44c28'/>
+  <team v='240445'/>
+  <user v='vPeteWalker'/>
+  
+   <!-- Web Server -->
+   <web-allow v='0/0'/>
+   <web-enable v='true'/>
+   
+</config>
