@@ -15,7 +15,7 @@ Default username and password
 U: ubuntu  
 P: nutanix/4u  
 #
-Required config to run on AHV. NOTE: Be sure to maintain the # sign before the cloud-config command.  
+Required config to run on AHV.  
 #cloud-config  
 password: nutanix/4u  
 chpasswd: { expire: False }  
