@@ -18,15 +18,10 @@
   <passkey v='82cdc64762a44c2882cdc64762a44c28'/>
   <team v='240445'/>
   <user v='vPeteWalker'/>
-  
-  <!-- Web Server -->
-  <web-allow v='0.0.0.0/0'/>
-  <web-enable v='true'/>
-   
+    
   <!-- Folding Slot Configuration -->
   <gpu v='true'/>
   <cpu v='-1'/>
-  <smp v='true'/>
    
   <!-- Slot Control -->
   <pause-on-battery v='false'/>
@@ -37,7 +32,7 @@
   <http-addresses v='0:7396'/>
   
   <!-- Web Server -->
-  <web-server v='0/0'/>
+  <web-allow v='0/0'/>
   <web-enable v='true'/>
    
   <!-- Remote Command Server -->
