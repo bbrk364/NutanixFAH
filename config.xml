@@ -3,6 +3,7 @@
   <core-priority v='low'/>
   <cpu-usage v='100'/>
   <smp v='true'/>
+  <gpu-usage v='100'>
 
   <!-- Network -->
   <proxy v=':8080'/>
@@ -18,8 +19,31 @@
   <team v='240445'/>
   <user v='vPeteWalker'/>
   
-   <!-- Web Server -->
-   <web-allow v='0/0'/>
-   <web-enable v='true'/>
+  <!-- Web Server -->
+  <web-allow v='0.0.0.0/0'/>
+  <web-enable v='true'/>
+   
+  <!-- Folding Slot Configuration -->
+  <gpu v='true'/>
+  <cpu v='-1'/>
+  <smp v='true'/>
+   
+  <!-- Slot Control -->
+  <pause-on-battery v='false'/>
+  <power v='FULL'/>
+   
+  <!-- HTTP Server -->
+  <allow v='0/0'/>
+  <http-addresses v='0:7396'/>
+  
+  <!-- Web Server -->
+  <web-server v='0/0'/>
+  <web-enable v='true'/>
+   
+  <!-- Remote Command Server -->
+  <command-address v='0.0.0.0'/>
+  <command-allow-no-pass v='0.0.0.0'/>
+  <command-enable v='true'/>
+  <command-port v='36330'/>
    
 </config>
