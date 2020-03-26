@@ -40,5 +40,4 @@
   <command-allow-no-pass v='0.0.0.0'/>
   <command-enable v='true'/>
   <command-port v='36330'/>
-   
 </config>
