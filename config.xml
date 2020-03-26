@@ -21,7 +21,7 @@
     
   <!-- Folding Slot Configuration -->
   <gpu v='true'/>
-  <cpu v='-1'/>
+  <cpus v='-1'/>
    
   <!-- Slot Control -->
   <pause-on-battery v='false'/>
