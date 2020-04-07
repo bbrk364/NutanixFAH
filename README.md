@@ -23,7 +23,7 @@ P: nutanix/4u
 Paste the following into the Guest Customization field when creating a new VM:  
 ```  
 #cloud-config  
-password: Fold@Ntnx  
+password: Fold4Nutanix  
 chpasswd: { expire: False }  
 ssh_pwauth: True  
 hostname: NutanixFAH  
