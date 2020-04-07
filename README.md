@@ -1,7 +1,7 @@
 Instructions assembled via numerous sources by Peter Walker - @vPeteWalker
 #
 Thanks to these folks for their assistance:  
-John Rehmert  
+John Rehmert
 #
 Use at your own risk. I am not responsible for any cost, damages, etc. incurred by using the following script.  
 If you intend on using this outside of equipment you personally own, be sure to receive approval to utilize said equipment.  
