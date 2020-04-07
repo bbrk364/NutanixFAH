@@ -45,7 +45,7 @@ runcmd:
   - yum -y install wget
   - wget https://download.foldingathome.org/releases/public/release/fahclient/centos-6.7-64bit/v7.5/fahclient-7.5.1-1.x86_64.rpm
   - wget https://download.foldingathome.org/releases/public/release/fahcontrol/centos-6.7-64bit/v7.5/fahcontrol-7.5.1-1.noarch.rpm
-  - rpm -u --nodeps fah*.rpm
+  - rpm -i --nodeps fah*.rpm
   - /etc/init.d/FAHClient stop
   - sleep 15
   - wget -O /etc/fahclient/config.xml https://github.com/vPeteWalker74/NutanixFAH/raw/master/config.xml
