@@ -1,45 +1,21 @@
 <config>
-  <!-- Folding Core -->
-  <core-priority v='low'/>
-  <cpu-usage v='100'/>
-  <smp v='true'/>
-  <gpu-usage v='100'>
-
-  <!-- Network -->
-  <proxy v=':8080'/>
-
-  <!-- Process Control -->
-  <fork v='true'/>
-  <priority v='high'/>
-  <respawn v='true'/>
-  <service v='true'/>
+  <!-- Folding Slot Configuration -->
+  <gpu v='false'/>
+  <power v='full'/>
+  <next-unit-percentage v='90'/>
+  <max-packet-size v='big'/>
 
   <!-- User Information -->
   <passkey v='82cdc64762a44c2882cdc64762a44c28'/>
   <team v='240445'/>
   <user v='vPeteWalker'/>
-    
-  <!-- Folding Slot Configuration -->
-  <gpu v='true'/>
-  <cpus v='-1'/>
-   
-  <!-- Slot Control -->
-  <pause-on-battery v='false'/>
-  <power v='FULL'/>
-   
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'/>
+  
   <!-- HTTP Server -->
-  <allow v='0/0'/>
-  <http-addresses v='0:7396'/>
+  <allow v='127.0.0.1 192.168.0.0/24'/>
   
-  <!-- Web Server -->
-  <web-allow v='0/0'/>
-  <web-enable v='true'/>
-   
   <!-- Remote Command Server -->
-  <command-address v='0.0.0.0'/>
-  <command-allow-no-pass v='0.0.0.0'/>
-  <command-enable v='true'/>
-  <command-port v='36330'/>
-    
+  <command-allow-no-pass v='127.0.0.1 192.168.0.0/24'/>
 </config>
-  
