@@ -22,26 +22,34 @@ P: nutanix/4u
 #
 Paste the following into the Guest Customization field when creating a new VM:  
 ```  
-#cloud-config  
-password: Fold4Nutanix  
-chpasswd: { expire: False }  
-ssh_pwauth: True  
-hostname: NutanixFAH  
-runcmd:  
-  - setenforce 0  
-  - sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config  
-  - systemctl disable firewalld  
-  - systemctl stop firewalld  
-  - yum -y update  
-  - yum -y install epel-release  
-  - yum -y install wget  
- - wget https://download.foldingathome.org/releases/public/release/fahclient/centos-6.7-64bit/v7.5/fahclient-7.5.1-1.x86_64.rpm  
- - wget https://download.foldingathome.org/releases/public/release/fahcontrol/centos-6.7-64bit/v7.5/fahcontrol-7.5.1-1.noarch.rpm  
- - rpm -u --nodeps fah*.rpm  
- - /etc/init.d/FAHClient stop  
- - sleep 15  
- - wget -O /etc/fahclient/config.xml https://github.com/vPeteWalker74/NutanixFAH/raw/master/config.xml  
- - reboot  
+#cloud-config
+hostname: NutanixFAH
+disable_root: false
+ssh_pwauth: true
+chgpasswd:
+  list: |
+    root: Fold4Nutanix!
+users:
+  - name: centos
+    chpasswd: { expire: False }
+    lock-passwd: false
+    plain_text_passwd: 'Fold4Nutanix!'
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+runcmd:
+  - setenforce 0
+  - sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
+  - systemctl disable firewalld
+  - systemctl stop firewalld
+  - yum -y update
+  - yum -y install epel-release
+  - yum -y install wget
+  - wget https://download.foldingathome.org/releases/public/release/fahclient/centos-6.7-64bit/v7.5/fahclient-7.5.1-1.x86_64.rpm
+  - wget https://download.foldingathome.org/releases/public/release/fahcontrol/centos-6.7-64bit/v7.5/fahcontrol-7.5.1-1.noarch.rpm
+  - rpm -u --nodeps fah*.rpm
+  - /etc/init.d/FAHClient stop
+  - sleep 15
+  - wget -O /etc/fahclient/config.xml https://github.com/vPeteWalker74/NutanixFAH/raw/master/config.xml
+  - reboot
 ```  
 Connect to any CVM and run the following before powering on the VM:  
 ```
