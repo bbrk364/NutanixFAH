@@ -14,8 +14,12 @@
   <slot id='0' type='CPU'/>
   
   <!-- HTTP Server -->
-  <allow v='127.0.0.1,0.0.0.0'/>
+  <allow v='127.0.0.1 192.168.1.0/24'/>
+  <http-addresses v='0:7396'/>
 
   <!-- Remote Command Server -->
-  <command-allow-no-pass v='127.0.0.1,0.0.0.0'/>
+  <command-enable v='true'/>
+  <password v='Fold4Nutanix!'/>
+  <command-port v='36330'/>
+  <command-deny-no-pass v='0/0'/>
 </config>
