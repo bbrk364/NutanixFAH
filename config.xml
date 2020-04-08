@@ -14,8 +14,8 @@
   <slot id='0' type='CPU'/>
   
   <!-- HTTP Server -->
-  <allow v='0.0.0.0'/>
+  <allow v='127.0.0.1 192.168.1.0'/>
   
   <!-- Remote Command Server -->
-  <command-allow-no-pass v='0.0.0.0'/>
+  <command-allow-no-pass v='127.0.0.1 192.168.1.0'/>
 </config>
