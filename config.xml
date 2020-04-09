@@ -14,8 +14,7 @@
   <slot id='0' type='CPU'/>
   
   <!-- HTTP Server -->
-  <allow v='127.0.0.1 192.168.1.0/24'/>
-  <http-addresses v='127.0.0.1:7396 10.38.15.0:7396'/>
+  <allow v='127.0.0.1 192.168.1.246/24'/>
 
   <!-- Remote Command Server -->
   <command-enable v='true'/>
