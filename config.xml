@@ -14,7 +14,7 @@
   <slot id='0' type='CPU'/>
   
   <!-- HTTP Server -->
-  <allow v='127.0.0.1 192.168.1.246/24'/>
+  <web-allow v='0/0'/>
 
   <!-- Remote Command Server -->
   <command-enable v='true'/>
